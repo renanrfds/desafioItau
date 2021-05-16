@@ -25,8 +25,9 @@
 
             <div class="campo">
                 <label><strong>CPF</strong>
-                    <input id="cpf" type="text" onkeyup="cpfChecar(this)" maxlength="14"  required placeholder="Digite seu CPF"
-                        onkeydown="javascript: fMascara( this, mCPF );"> <span id="cpfResponse"></span>
+                    <input id="cpf" type="text" onkeyup="cpfChecar(this)" maxlength="14" required
+                        placeholder="Digite seu CPF" onkeydown="javascript: fMascara( this, mCPF );"> <span
+                        id="cpfResponse"></span>
 
 
             </div>
@@ -41,7 +42,7 @@
             </div>
 
             <div class="campo">
-                <label for="email"><strong>Email</strong>
+                <label for="email"><strong>E-mail</strong>
                     <input type="email" name="email" id="email" required placeholder="Digite seu E-mail">
                 </label>
             </div> <br>
@@ -52,31 +53,28 @@
                 <input type="radio" name="genero" value="masculino"><strong>M</strong>
                 <input type="radio" name="genero" value="feminino"><strong>F</strong>
 
-            </div>
-
-            <div class="campo">
-                <label>Data de Nascimento:</label>
-                <input type="date" name="data" value="date">
             </div> <br>
 
+
+
             <div class="campo">
-                <label for="telefone">Telefone Fixo:
+                <label for="telefone"> <strong><span>Telefone Fixo</span> </strong>
                     <input type="text" name="telefone" id="telefone" placeholder="Digite seu número"></label>
-                <label for="celular">Celular:*
+                <label for="celular"> <strong><span>Celular *</span> </strong>
                     <input type="text" name="celular" id="celular" required placeholder="Digite seu número">
                 </label> <br>
             </div>
             <div class="campo">
-                <label>CEP:
+                <label>  <strong><span>CEP</span> </strong>
                     <input name="cep" type="text" id="cep" class="mascCEP" value="" size="10" maxlength="9"
                         onblur="pesquisacep(this.value);" placeholder="Digite seu CEP" /></label>
-                <label>Rua:
+                <label><strong><span>Rua</span> </strong>
                     <input name="rua" type="text" id="rua"></label>
-                <label>Bairro:
+                <label><strong><span>Bairro</span> </strong>
                     <input name="bairro" type="text" id="bairro"></label>
-                <label>Cidade:</label>
-                <input name="cidade" type="text" id="cidade">
-                <label>Estado:
+                <label><strong>Cidade</span> </strong>
+                <input name="cidade" type="text" id="cidade"></label>
+                <label><strong><span>Estado</span> </strong>
                     <input name="uf" type="text" id="uf" size="2" maxlength="2"></label> <br>
 
             </div>
