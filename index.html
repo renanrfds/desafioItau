@@ -1,0 +1,95 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/indexStyle.css">
+    <link rel="icon" type="image/png" href="img/icone.png">
+    <title>teste</title>
+
+</head>
+
+<body>
+    <script src="./logica.js"></script>
+
+    <div class="container">
+        <form method="get" action=".">
+            <h1 id="titulo">Cadastro Pessoal</h1>
+            <div>
+                <label for="nome">
+                    <strong><span>Nome Completo</span></strong>
+                    <input type="text" name="nome" id="nome" maxlength="50" required
+                        placeholder="Digite seu nome completo">
+                </label>
+            </div>
+
+            <div class="campo">
+                <label><strong>CPF</strong>
+                    <input id="cpf" type="text" onkeyup="cpfChecar(this)" maxlength="14"  required placeholder="Digite seu CPF"
+                        onkeydown="javascript: fMascara( this, mCPF );"> <span id="cpfResponse"></span>
+
+
+            </div>
+
+            <div class="campo">
+                <label>
+                    <strong>RG</strong>
+                    <input type="text" name="rg" placeholder="Digite seu RG">
+
+
+                </label>
+            </div>
+
+            <div class="campo">
+                <label for="email"><strong>Email</strong>
+                    <input type="email" name="email" id="email" required placeholder="Digite seu E-mail">
+                </label>
+            </div> <br>
+            <div class="genero">
+
+                <strong><span>Sexo</span></strong>
+
+                <input type="radio" name="genero" value="masculino"><strong>M</strong>
+                <input type="radio" name="genero" value="feminino"><strong>F</strong>
+
+            </div>
+
+            <div class="campo">
+                <label>Data de Nascimento:</label>
+                <input type="date" name="data" value="date">
+            </div> <br>
+
+            <div class="campo">
+                <label for="telefone">Telefone Fixo:
+                    <input type="text" name="telefone" id="telefone" placeholder="Digite seu número"></label>
+                <label for="celular">Celular:*
+                    <input type="text" name="celular" id="celular" required placeholder="Digite seu número">
+                </label> <br>
+            </div>
+            <div class="campo">
+                <label>CEP:
+                    <input name="cep" type="text" id="cep" class="mascCEP" value="" size="10" maxlength="9"
+                        onblur="pesquisacep(this.value);" placeholder="Digite seu CEP" /></label>
+                <label>Rua:
+                    <input name="rua" type="text" id="rua"></label>
+                <label>Bairro:
+                    <input name="bairro" type="text" id="bairro"></label>
+                <label>Cidade:</label>
+                <input name="cidade" type="text" id="cidade">
+                <label>Estado:
+                    <input name="uf" type="text" id="uf" size="2" maxlength="2"></label> <br>
+
+            </div>
+
+
+
+            <div class="botao">
+                <input type="submit" value="Cadastrar">
+            </div>
+        </form>
+    </div>
+
+    </div>
+</body>
+
+</html>
