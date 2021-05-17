@@ -17,14 +17,14 @@
             <h1 id="titulo">Cadastro Pessoal</h1>
             <div>
                 <label for="nome">
-                    <strong><span>Nome Completo</span></strong>
+                    <strong><span>Nome Completo*</span></strong>
                     <input type="text" name="nome" id="nome" maxlength="50" required
                         placeholder="Digite seu nome completo">
                 </label>
             </div>
 
             <div class="campo">
-                <label><strong>CPF</strong>
+                <label><strong>CPF*</strong>
                     <input id="cpf" type="text" onkeyup="cpfChecar(this)" maxlength="14" required
                         placeholder="Digite seu CPF" onkeydown="javascript: fMascara( this, mCPF );"> <span
                         id="cpfResponse"></span>
@@ -59,9 +59,9 @@
 
             <div class="campo">
                 <label for="telefone"> <strong><span>Telefone Fixo</span> </strong>
-                    <input type="text" name="telefone" id="telefone"  maxlength="16"  placeholder="Digite seu número"onkeypress="mascara(this, '## ####-####')" maxlength="14"></label>
+                    <input type="text" name="telefone" id="telefone"    placeholder="Digite seu número"onkeypress="mascara(this, '## ####-####')" maxlength="12"></label>
                 <label for="celular"> <strong><span>Celular *</span> </strong>
-                    <input type="text" name="celular" id="celular"  maxlength="16" required placeholder="Digite seu número" onkeypress="mascara(this, '## #####-####')" maxlength="13">
+                    <input type="text" name="celular" id="celular"   required placeholder="Digite seu número" onkeypress="mascara(this, '## #####-####')" maxlength="13">
                 </label> <br>
             </div>
             <div class="campo">
@@ -69,20 +69,20 @@
                     <input name="cep" type="text" id="cep" class="mascCEP" value="" size="10" maxlength="9"
                         onblur="pesquisacep(this.value);" placeholder="Digite seu CEP" /></label>
                 <label><strong><span>Rua</span> </strong>
-                    <input name="rua" type="text" id="rua"></label>
+                    <input name="rua" type="text" id="rua" placeholder="Rua"></label>
                 <label><strong><span>Bairro</span> </strong>
-                    <input name="bairro" type="text" id="bairro"></label>
+                    <input name="bairro" type="text" id="bairro" placeholder="Bairro"></label>
                 <label><strong>Cidade</span> </strong>
-                <input name="cidade" type="text" id="cidade"></label>
+                <input name="cidade" type="text" id="cidade" placeholder="Cidade"></label>
                 <label><strong><span>Estado</span> </strong>
-                    <input name="uf" type="text" id="uf" size="2" maxlength="2"></label> <br>
+                    <input name="uf" type="text" id="uf" size="2" maxlength="2" placeholder="UF"></label> <br>
 
             </div>
 
 
 
             <div class="botao">
-                <input type="submit" onclick="aviso()" value="Cadastrar">
+                <input type="submit" value="Cadastrar">
             </div>
         </form>
     </div>
