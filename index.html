@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/indexStyle.css">
     <link rel="icon" type="image/png" href="img/icone.png">
-    <title>teste</title>
+    <title>Formulario</title>
 
 </head>
 
@@ -35,7 +35,7 @@
             <div class="campo">
                 <label>
                     <strong>RG</strong>
-                    <input type="text" name="rg" placeholder="Digite seu RG">
+                    <input type="text" name="rg" placeholder="Digite seu RG" onkeypress="mascara(this, '##.###.###-#')" maxlength="14">
 
 
                 </label>
@@ -59,9 +59,9 @@
 
             <div class="campo">
                 <label for="telefone"> <strong><span>Telefone Fixo</span> </strong>
-                    <input type="text" name="telefone" id="telefone" placeholder="Digite seu número"></label>
+                    <input type="text" name="telefone" id="telefone"  maxlength="16"  placeholder="Digite seu número"onkeypress="mascara(this, '## ####-####')" maxlength="14"></label>
                 <label for="celular"> <strong><span>Celular *</span> </strong>
-                    <input type="text" name="celular" id="celular" required placeholder="Digite seu número">
+                    <input type="text" name="celular" id="celular"  maxlength="16" required placeholder="Digite seu número" onkeypress="mascara(this, '## #####-####')" maxlength="13">
                 </label> <br>
             </div>
             <div class="campo">
@@ -82,7 +82,7 @@
 
 
             <div class="botao">
-                <input type="submit" value="Cadastrar">
+                <input type="submit" onclick="aviso()" value="Cadastrar">
             </div>
         </form>
     </div>
