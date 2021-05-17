@@ -76,10 +76,12 @@ function is_cpf(c) {
     if ((c = c.replace(/[^\d]/g, "")).length != 11)
         return false
 
-    if ([c == '00000000000',
-                '11111111111'])
-        return false;
+    if (c == '00000000000') {
 
+
+
+        return false;
+    }
     var r;
     var s = 0;
 
@@ -133,3 +135,22 @@ cpfChecar = function (el) {
     document.getElementById('cpfResponse').innerHTML = is_cpf(el.value) ? '<span style="color:green">válido</span>' : '<span style="color:red">inválido</span>';
     if (el.value == '') document.getElementById('cpfResponse').innerHTML = '';
 }
+
+/* Mascara Telefone*/
+function mascara(t, mask) {
+    var i = t.value.length;
+    var saida = mask.substring(1, 0);
+    var texto = mask.substring(i)
+    if (texto.substring(0, 1) != saida) {
+        t.value += texto.substring(0, 1);
+    }
+}
+
+
+function aviso() {
+    alert("Cadastro Realizado com Sucesso!")
+}
+
+
+
+
